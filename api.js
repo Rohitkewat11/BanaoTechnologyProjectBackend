@@ -9,8 +9,8 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
 
-const userRouteInfo = require('../backend/Route/userRoute');
-const userDataRouteInfo = require('../backend/Route/userDataRoute');
+const userRouteInfo = require('./Route/userRoute');
+const userDataRouteInfo = require('./Route/userDataRoute');
 app.use('/',userRouteInfo);
 app.use('/',userDataRouteInfo);
 
